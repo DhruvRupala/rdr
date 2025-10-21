@@ -23,12 +23,12 @@ export const ThemeSwitcher = () => {
     const savedTheme = localStorage.getItem('portfolio-theme') || '';
     const theme = themes.find(t => t.class === savedTheme) || themes[0];
     setCurrentTheme(theme.name);
-    document.documentElement.className = savedTheme;
+    document.body.className = savedTheme;
   }, []);
 
   const changeTheme = (themeName: string, themeClass: string) => {
     setCurrentTheme(themeName);
-    document.documentElement.className = themeClass;
+    document.body.className = themeClass;
     localStorage.setItem('portfolio-theme', themeClass);
   };
 
