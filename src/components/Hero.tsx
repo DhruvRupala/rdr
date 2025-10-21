@@ -4,32 +4,32 @@ import profileImage from '@/assets/profile.jpg';
 
 export const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center pt-20 px-4">
-      <div className="container mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 animate-fade-in">
+    <section id="home" className="min-h-screen flex items-center justify-center pt-24 pb-12 px-4 sm:px-6">
+      <div className="container mx-auto max-w-7xl">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div className="space-y-4 sm:space-y-6 animate-fade-in order-2 md:order-1">
             <div className="space-y-2">
-              <p className="text-primary text-lg md:text-xl font-medium">Hello, I'm</p>
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold">
+              <p className="text-primary text-base sm:text-lg md:text-xl font-medium">Hello, I'm</p>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
                 Dhruv Rupala
               </h1>
-              <h2 className="text-2xl md:text-3xl lg:text-4xl text-foreground/80">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-foreground/80">
                 Computer Engineering Student
               </h2>
             </div>
             
-            <p className="text-lg text-muted-foreground max-w-xl">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-xl leading-relaxed">
               Passionate about leveraging technology to build innovative solutions. 
               Specialized in Web Development, Database Management, AI, and Cybersecurity.
             </p>
 
-            <div className="flex flex-wrap gap-4">
-              <Button asChild className="gradient-primary shadow-glow">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2">
+              <Button asChild className="gradient-primary shadow-glow w-full sm:w-auto">
                 <a href="#portfolio">
                   View Portfolio <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
               </Button>
-              <Button variant="outline" asChild>
+              <Button variant="outline" asChild className="w-full sm:w-auto">
                 <a href="#contact">
                   <Download className="mr-2 h-4 w-4" />
                   Download CV
@@ -37,7 +37,7 @@ export const Hero = () => {
               </Button>
             </div>
 
-            <div className="flex gap-4 pt-4">
+            <div className="flex gap-3 sm:gap-4 pt-2 sm:pt-4 justify-center sm:justify-start">
               <a
                 href="https://github.com/DhruvRupala"
                 target="_blank"
@@ -63,15 +63,15 @@ export const Hero = () => {
             </div>
           </div>
 
-          <div className="flex justify-center animate-scale-in">
+          <div className="flex justify-center animate-scale-in order-1 md:order-2">
             <div className="relative">
-              <div className="absolute inset-0 gradient-primary rounded-full blur-3xl opacity-20 animate-pulse"></div>
-              <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+              <div className="absolute inset-0 gradient-primary rounded-full blur-2xl sm:blur-3xl opacity-20 animate-pulse"></div>
+              <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96">
                 <div className="absolute inset-0 gradient-primary rounded-full"></div>
                 <img
                   src={profileImage}
-                  alt="Dhruv Rupala"
-                  className="relative w-full h-full object-cover rounded-full p-2"
+                  alt="Dhruv Rupala - Computer Engineering Student"
+                  className="relative w-full h-full object-cover rounded-full p-1.5 sm:p-2"
                 />
               </div>
             </div>

@@ -32,48 +32,48 @@ const certificates = [
 
 export const Certificates = () => {
   return (
-    <section id="certificates" className="py-20 px-4 sm:px-6 lg:px-8 bg-background/50">
-      <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-12 animate-fade-in">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <Award className="w-8 h-8 text-primary" />
-            <h2 className="text-3xl md:text-4xl font-bold gradient-primary bg-clip-text text-transparent">
+    <section id="certificates" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-background/50">
+      <div className="container mx-auto max-w-7xl">
+        <div className="text-center mb-10 sm:mb-12 animate-fade-in">
+          <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
+            <Award className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold gradient-primary bg-clip-text text-transparent">
               Certificates
             </h2>
           </div>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto px-4">
             Professional certifications and achievements that validate my skills and expertise
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {certificates.map((cert, index) => (
             <Card 
               key={index} 
               className="glass-card hover-scale group overflow-hidden border-border/50"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <CardHeader>
+              <CardHeader className="p-4 sm:p-6">
                 <div className="flex items-start justify-between gap-2">
-                  <div className="bg-primary/10 p-3 rounded-lg">
-                    <Award className="w-6 h-6 text-primary" />
+                  <div className="bg-primary/10 p-2 sm:p-3 rounded-lg flex-shrink-0">
+                    <Award className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                   </div>
                   <Badge variant="secondary" className="text-xs">
                     {cert.date}
                   </Badge>
                 </div>
-                <CardTitle className="text-xl mt-4 group-hover:text-primary transition-colors">
+                <CardTitle className="text-lg sm:text-xl mt-3 sm:mt-4 group-hover:text-primary transition-colors">
                   {cert.title}
                 </CardTitle>
-                <CardDescription className="font-medium text-primary/80">
+                <CardDescription className="font-medium text-primary/80 text-sm sm:text-base">
                   {cert.issuer}
                 </CardDescription>
               </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground mb-4">
+              <CardContent className="p-4 sm:p-6 pt-0">
+                <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4">
                   {cert.description}
                 </p>
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4">
                   {cert.skills.map((skill, idx) => (
                     <Badge key={idx} variant="outline" className="text-xs">
                       {skill}
@@ -83,12 +83,12 @@ export const Certificates = () => {
                 <Button 
                   variant="outline" 
                   size="sm" 
-                  className="w-full group/btn"
+                  className="w-full group/btn text-xs sm:text-sm h-8 sm:h-9"
                   asChild
                 >
                   <a href={cert.link} target="_blank" rel="noopener noreferrer">
-                    View Certificate
-                    <ExternalLink className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                    <span className="text-xs sm:text-sm">View Certificate</span>
+                    <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
                   </a>
                 </Button>
               </CardContent>

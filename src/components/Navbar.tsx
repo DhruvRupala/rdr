@@ -65,18 +65,29 @@ export const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden pb-4 animate-fade-in">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="block py-2 text-foreground/80 hover:text-primary transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {link.name}
-              </a>
-            ))}
-          </div>
+          <>
+            {/* Backdrop overlay */}
+            <div 
+              className="fixed inset-0 bg-background/95 backdrop-blur-md md:hidden z-40"
+              onClick={() => setIsMobileMenuOpen(false)}
+            />
+            
+            {/* Mobile menu */}
+            <div className="md:hidden pb-6 pt-4 relative z-50 bg-card/95 backdrop-blur-lg shadow-xl rounded-b-2xl animate-fade-in">
+              <div className="flex flex-col space-y-1 px-2">
+                {navLinks.map((link) => (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    className="block py-3 px-4 text-foreground/90 hover:text-primary hover:bg-primary/10 rounded-lg transition-all font-medium"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {link.name}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </>
         )}
       </div>
     </nav>
