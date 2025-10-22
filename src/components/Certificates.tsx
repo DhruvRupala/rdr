@@ -37,7 +37,7 @@ export const Certificates = () => {
         <div className="text-center mb-10 sm:mb-12 animate-fade-in">
           <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
             <Award className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold gradient-primary bg-clip-text text-transparent">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary">
               Certificates
             </h2>
           </div>

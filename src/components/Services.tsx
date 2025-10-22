@@ -21,7 +21,7 @@ export const Services = () => {
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-10 sm:mb-12 md:mb-16 animate-fade-in">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4">
-            My <span className="gradient-primary bg-clip-text text-transparent">Services</span>
+            My <span className="text-primary">Services</span>
           </h2>
           <div className="w-16 sm:w-20 h-1 bg-primary mx-auto rounded-full mb-3 sm:mb-4"></div>
           <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto px-4">

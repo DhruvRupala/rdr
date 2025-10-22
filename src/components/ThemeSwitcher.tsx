@@ -9,21 +9,27 @@ import {
 } from '@/components/ui/dropdown-menu';
 
 const themes = [
-  { name: 'Dark', class: '' },
   { name: 'Blue', class: 'theme-blue' },
+  { name: 'Dark', class: '' },
   { name: 'Purple', class: 'theme-purple' },
   { name: 'Green', class: 'theme-green' },
   { name: 'Light', class: 'theme-light' },
 ];
 
 export const ThemeSwitcher = () => {
-  const [currentTheme, setCurrentTheme] = useState('Dark');
+  const [currentTheme, setCurrentTheme] = useState('Blue');
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('portfolio-theme') || '';
-    const theme = themes.find(t => t.class === savedTheme) || themes[0];
-    setCurrentTheme(theme.name);
-    document.body.className = savedTheme;
+    const savedTheme = localStorage.getItem('portfolio-theme');
+    if (savedTheme !== null) {
+      const theme = themes.find(t => t.class === savedTheme) || themes[0];
+      setCurrentTheme(theme.name);
+      document.body.className = savedTheme;
+    } else {
+      // Set blue theme as default
+      document.body.className = 'theme-blue';
+      localStorage.setItem('portfolio-theme', 'theme-blue');
+    }
   }, []);
 
   const changeTheme = (themeName: string, themeClass: string) => {

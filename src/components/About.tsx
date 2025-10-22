@@ -29,7 +29,7 @@ export const About = () => {
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-10 sm:mb-12 md:mb-16 animate-fade-in">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4">
-            About <span className="gradient-primary bg-clip-text text-transparent">Me</span>
+            About <span className="text-primary">Me</span>
           </h2>
           <div className="w-16 sm:w-20 h-1 bg-primary mx-auto rounded-full"></div>
         </div>
