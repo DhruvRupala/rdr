@@ -1,4 +1,4 @@
-import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowRight, Download, Github, Linkedin, Mail, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import profileImage from '@/assets/profile.jpg';
 
@@ -53,6 +53,14 @@ export const Hero = () => {
                 className="p-3 rounded-full bg-secondary hover:bg-primary hover:shadow-glow transition-all duration-300"
               >
                 <Linkedin className="h-5 w-5" />
+              </a>
+              <a
+                href="https://www.instagram.com/dhruv._rupala/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 rounded-full bg-secondary hover:bg-primary hover:shadow-glow transition-all duration-300"
+              >
+                <Instagram className="h-5 w-5" />
               </a>
               <a
                 href="mailto:dhruvrupala1213@gmail.com"
