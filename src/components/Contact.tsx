@@ -253,7 +253,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1 text-sm sm:text-base">Phone</h3>
-                  <p className="text-xs sm:text-sm text-muted-foreground">Contact via email</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">8401722679</p>
                 </div>
               </div>
             </div>
