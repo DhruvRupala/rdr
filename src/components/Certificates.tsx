@@ -5,28 +5,28 @@ import { Button } from '@/components/ui/button';
 
 const certificates = [
   {
-    title: 'Web Development Bootcamp',
-    issuer: 'Udemy',
-    date: '2024',
-    description: 'Comprehensive web development course covering HTML, CSS, JavaScript, and React',
-    skills: ['HTML', 'CSS', 'JavaScript', 'React'],
-    link: '#',
+    title: 'Internship - Web Development',
+    issuer: 'Zidio Development',
+    date: 'May-July 2025',
+    description: 'Comprehensive web development course covering HTML, CSS, JavaScript, and React, Node.js, Express.js, Database: MongoDB or MySQL',
+    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Express.js', 'MongoDB', 'MySQL'],
+    link: 'https://drive.google.com/file/d/1JrIKAPegcnZeKutdH-6NXmn8A8SknjWQ/view?usp=sharing',
   },
   {
-    title: 'Python for Data Science',
-    issuer: 'Coursera',
-    date: '2023',
+    title: 'Understanding Incubation and Entrepreneurship',
+    issuer: 'NPTEL',
+    date: 'Jan-Apr 2025',
     description: 'Advanced Python programming for data analysis and visualization',
-    skills: ['Python', 'NumPy', 'Pandas', 'Matplotlib'],
-    link: '#',
+    skills: ['Startup Incubation Processes','Understanding Business Accelerators','Networking and Mentorship','Funding and Investment Fundamentals'],
+    link: 'https://drive.google.com/file/d/1Gou6NAEpAAKjazZZVLam0E1BX56aDjJ4/view?usp=sharing',
   },
   {
     title: 'Cybersecurity Fundamentals',
-    issuer: 'Cisco Networking Academy',
-    date: '2023',
+    issuer: 'IBM-SkillsBuild',
+    date: '2025',
     description: 'Introduction to cybersecurity concepts and best practices',
     skills: ['Network Security', 'Cryptography', 'Risk Management'],
-    link: '#',
+    link: 'https://drive.google.com/file/d/18fyvgSSJkQJ_Uys7nEJ6xVcFHF8wmjiv/view?usp=sharing',
   },
 ];
 

@@ -14,12 +14,12 @@ const skills = [
   {
     category: 'Developer Tools',
     icon: Shield,
-    items: ['Git & GitHub', 'Linux', 'Nmap', 'Wireshark', 'Postman', 'AI Concepts'],
+    items: ['Git & GitHub', 'Wireshark', 'Nmap', 'TCPdump', 'Burp Suit', 'Xampp','Postman', 'Figma','AI Concepts & Frameworks'],
   },
   {
     category: 'Databases',
     icon: Database,
-    items: ['MongoDB', 'MySQL'],
+    items: ['MongoDB', 'MySQL', 'PostgreSQL'],
   },
 ];
 
@@ -49,18 +49,23 @@ export const About = () => {
                   <p className="text-sm sm:text-base text-foreground/80 font-medium">
                     Pandit Deendayal Energy University (PDEU)
                   </p>
-                  <p className="text-xs sm:text-sm text-muted-foreground">Class of 2026</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">2022-2026</p>
                 </div>
               </div>
             </div>
 
             <div className="glass-card p-4 sm:p-6 rounded-xl sm:rounded-2xl">
-              <p className="text-sm sm:text-base md:text-lg leading-relaxed text-foreground/90">
-                Driven Computer Engineering undergraduate at PDEU. Passionate about leveraging 
-                technology to build innovative solutions, with a keen interest in Web Development, 
-                Database Management, AI, and Cybersecurity. Actively seeking opportunities to apply 
-                problem-solving skills to real-world challenges and contribute to impactful projects.
-              </p>
+              <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Coursework</h3>
+              <div className="flex flex-wrap gap-2">
+                {['OS', 'DBMS', 'OOPs (Java)', 'DSA/DAA', 'Computer Network', 'Cyber Security', 'CNS', 'Advanced Python', 'Software Engineering', 'AI/ML', 'NPTEL (Understanding Incubation and Entrepreneurship)'].map((course) => (
+                  <span
+                    key={course}
+                    className="px-3 py-1.5 bg-primary/10 border border-primary/20 rounded-lg text-sm font-medium text-foreground hover:bg-primary/20 transition-colors duration-200"
+                  >
+                    {course}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
 

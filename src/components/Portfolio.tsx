@@ -4,12 +4,14 @@ const projects = [{
   title: 'Excel Analytics App',
   description: 'Full-stack MERN application allowing users to upload Excel files and visualize data with interactive charts. Features real-time data processing and dynamic chart generation.',
   technologies: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Chart.js'],
-  category: 'Web Development'
+  category: 'Web Development',
+  github: 'https://github.com/DhruvRupala/Excel-Analytics-Web-App'
 }, {
   title: 'Blogging Web App',
   description: 'Full-featured content publishing platform with JWT authentication, admin dashboard, and responsive UI. Includes user management, post creation, and comment system.',
   technologies: ['React.js', 'Node.js', 'MongoDB', 'JWT', 'TailwindCSS'],
-  category: 'Web Development'
+  category: 'Web Development',
+  github: 'https://github.com/DhruvRupala/BlogSphere'
 }];
 export const Portfolio = () => {
   return <section id="portfolio" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-card/30">
@@ -39,11 +41,13 @@ export const Portfolio = () => {
                     </h3>
                   </div>
                   <div className="flex gap-2 flex-shrink-0">
-                    <Button variant="ghost" size="icon" className="h-8 w-8 sm:h-10 sm:w-10 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <Button 
+                      variant="ghost" 
+                      size="icon" 
+                      className="h-8 w-8 sm:h-10 sm:w-10 opacity-0 group-hover:opacity-100 transition-opacity"
+                      onClick={() => window.open(project.github, '_blank')}
+                    >
                       <Github className="h-4 w-4 sm:h-5 sm:w-5" />
-                    </Button>
-                    <Button variant="ghost" size="icon" className="h-8 w-8 sm:h-10 sm:w-10 opacity-0 group-hover:opacity-100 transition-opacity">
-                      <ExternalLink className="h-4 w-4 sm:h-5 sm:w-5" />
                     </Button>
                   </div>
                 </div>

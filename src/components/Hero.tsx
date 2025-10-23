@@ -19,18 +19,17 @@ export const Hero = () => {
             </div>
             
             <p className="text-base sm:text-lg text-muted-foreground max-w-xl leading-relaxed">
-              Passionate about leveraging technology to build innovative solutions. 
-              Specialized in Web Development, Database Management, AI, and Cybersecurity.
+              Computer Engineering undergraduate at PDEU passionate about Web Development, Database Management, AI, and Cybersecurity. Eager to apply problem-solving skills to real-world challenges and impactful projects.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2">
               <Button asChild className="gradient-primary shadow-glow w-full sm:w-auto">
-                <a href="#portfolio">
-                  View Portfolio <ArrowRight className="ml-2 h-4 w-4" />
+                <a href="#contact">
+                  Contact Me <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
               </Button>
               <Button variant="outline" asChild className="w-full sm:w-auto">
-                <a href="#contact">
+                <a href="https://drive.google.com/file/d/1WFb8W_n6KYpq7P1pK9M6JPeX2BcDcDF6/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <Download className="mr-2 h-4 w-4" />
                   Download CV
                 </a>
