@@ -16,7 +16,7 @@ const certificates = [
     title: 'Understanding Incubation and Entrepreneurship',
     issuer: 'NPTEL',
     date: 'Jan-Apr 2025',
-    description: 'Advanced Python programming for data analysis and visualization',
+    description: 'Achieved an Elite certificate in a 12-week NPTEL course on Understanding Incubation and Entrepreneurship, offered by IIT Bombay. Attained a consolidated score of 94%, demonstrating a strong grasp of the principles of venture creation and the startup ecosystem.',
     skills: ['Startup Incubation Processes','Understanding Business Accelerators','Networking and Mentorship','Funding and Investment Fundamentals'],
     link: 'https://drive.google.com/file/d/1Gou6NAEpAAKjazZZVLam0E1BX56aDjJ4/view?usp=sharing',
   },
