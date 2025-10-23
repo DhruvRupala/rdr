@@ -29,7 +29,7 @@ export const Hero = () => {
                 </a>
               </Button>
               <Button variant="outline" asChild className="w-full sm:w-auto">
-                <a href="https://drive.google.com/file/d/1WFb8W_n6KYpq7P1pK9M6JPeX2BcDcDF6/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <a href="https://drive.google.com/file/d/1_pP7wbMXEbmBSzInUuEbQ22wr7LNwBB3/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <Download className="mr-2 h-4 w-4" />
                   Download CV
                 </a>
