@@ -5,7 +5,7 @@ const services = [
     icon: Code,
     title: 'Web Development',
     description:
-      'Building modern, responsive web applications using cutting-edge technologies like React, Node.js, and MongoDB. From concept to deployment, I create scalable solutions.',
+      'Building modern, responsive web applications using cutting-edge technologies like React, Node.js, Express.js and MongoDB. From concept to deployment, I create scalable solutions.',
   },
   {
     icon: Shield,
