@@ -44,7 +44,7 @@ export const About = () => {
                 <div className="min-w-0">
                   <h3 className="text-lg sm:text-xl font-semibold mb-1 sm:mb-2">Education</h3>
                   <p className="text-sm sm:text-base text-muted-foreground">
-                    B.Tech in Computer Science Engineering
+                    B.Tech in Computer Science & Engineering
                   </p>
                   <p className="text-sm sm:text-base text-foreground/80 font-medium">
                     Pandit Deendayal Energy University (PDEU)
