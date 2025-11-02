@@ -19,7 +19,7 @@ export const Hero = () => {
             </div>
             
             <p className="text-base sm:text-lg text-muted-foreground max-w-xl leading-relaxed">
-              Computer Engineering undergraduate at PDEU passionate about Web Development, Database Management, AI, and Cybersecurity. Eager to apply problem-solving skills to real-world challenges and impactful projects.
+              Computer Engineering undergraduate at PDEU passionate about Web Development, Database Management, AI/ML, and Cybersecurity. Eager to apply problem-solving skills to real-world challenges and impactful projects.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2">
