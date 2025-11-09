@@ -57,7 +57,7 @@ export const About = () => {
             <div className="glass-card p-4 sm:p-6 rounded-xl sm:rounded-2xl">
               <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Coursework</h3>
               <div className="flex flex-wrap gap-2">
-                {['OS', 'DBMS', 'OOPs (Java)', 'DSA/DAA', 'Computer Network', 'Cyber Security', 'CNS', 'Advanced Python', 'Software Engineering', 'AI/ML', 'NPTEL (Understanding Incubation and Entrepreneurship)'].map((course) => (
+                {['OOPs(Java)', 'DSA/DAA', 'OS', 'DBMS', 'Advanced Python', 'Computer Network', 'Cryptography & Network Security', 'Cyber Security', 'Digital Forensics', 'AI/ML', 'NPTEL(Understanding Incubation and Entrepreneurship)'].map((course) => (
                   <span
                     key={course}
                     className="px-3 py-1.5 bg-primary/10 border border-primary/20 rounded-lg text-sm font-medium text-foreground hover:bg-primary/20 transition-colors duration-200"
