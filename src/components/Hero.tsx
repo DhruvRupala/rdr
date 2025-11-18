@@ -14,12 +14,12 @@ export const Hero = () => {
                 Dhruv Rupala
               </h1>
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-foreground/80">
-                Computer Engineering Student
+                Architecting Ideas into Reality
               </h2>
             </div>
             
             <p className="text-base sm:text-lg text-muted-foreground max-w-xl leading-relaxed">
-              Computer Engineering undergraduate at PDEU passionate about Web Development, Database Management, Cybersecurity, and AI/ML. Eager to apply problem-solving skills to real-world challenges and impactful projects.
+              Bachelor's of Computer Science student at PDEU with a strong interest in Web Development, Databases, Cybersecurity, and AI/ML. Motivated to apply problem-solving skills to real-world projects and meaningful challenges
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2">
