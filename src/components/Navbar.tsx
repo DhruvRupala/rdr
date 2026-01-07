@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-// import { ThemeSwitcher } from './ThemeSwitcher';
+import { ThemeSwitcher } from './ThemeSwitcher';
 
 const navLinks = [
   { name: 'Home', href: '#home' },
