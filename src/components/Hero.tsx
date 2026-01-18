@@ -37,14 +37,7 @@ export const Hero = () => {
             </div>
 
             <div className="flex gap-3 sm:gap-4 pt-2 sm:pt-4 justify-center sm:justify-start">
-              <a
-                href="https://github.com/DhruvRupala"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 rounded-full bg-secondary hover:bg-primary hover:shadow-glow transition-all duration-300"
-              >
-                <Github className="h-5 w-5" />
-              </a>
+              
               <a
                 href="https://www.linkedin.com/in/dhruv-rupala-96191a253/"
                 target="_blank"
@@ -53,6 +46,16 @@ export const Hero = () => {
               >
                 <Linkedin className="h-5 w-5" />
               </a>
+              
+                <a
+                href="https://github.com/DhruvRupala"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 rounded-full bg-secondary hover:bg-primary hover:shadow-glow transition-all duration-300"
+              >
+                <Github className="h-5 w-5" />
+              </a>
+              
               <a
                 href="https://www.instagram.com/dhruv._rupala/"
                 target="_blank"
